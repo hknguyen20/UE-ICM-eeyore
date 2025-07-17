@@ -28,6 +28,8 @@ Since most public api servers (e.g. openrouter) only support post-trained chat m
 
 In particular, we highly recommend activating the `prefix caching` feature to accelerate the experiments, because our algorithm will create many API queries with similar prefixes.
 
+Note that if use vllm to deploy, I recommend create another conda environment and activate it in a different terminal to host llm. Do so because there may likely be conflicting dependencies between vllm's and UE's environnment:
+`vllm 0.9.1 has requirement openai>=1.52.0, but you have openai 0.28.0.`
 
 ### Secrets
 

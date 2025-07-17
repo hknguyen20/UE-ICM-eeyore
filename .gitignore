@@ -153,3 +153,7 @@ wandb/
 src/results
 results*
 logs
+
+#logging
+*.log
+*.out

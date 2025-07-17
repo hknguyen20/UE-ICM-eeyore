@@ -33,7 +33,7 @@ from src.tools.dataloaders import (
     load_problems_from_json_ids,
 )
 from src.tools.path_utils import get_default_results_directory, get_root_directory
-
+from src.tools.format_eeyore import save_formatted_eeyore
 
 def calculate_accuracy(train_data, inconsistent_pairs):
     train_probs = []
@@ -372,6 +372,25 @@ I think this claim is """
 
         for i in train:
             i['source'] = 'truthfulQA-preference'
+            i['consistency_key'] = 'A>B' if i['label'] else 'B>A'
+            i['prompt'] = template.format(question=i['question'], choice=i['choice'], choice_2=i['choice_2'])
+        args.GROUP_SIZE = 2
+        
+    elif args.testbed == 'eeyore-preference':
+        try:
+            with open(get_root_directory() / "data/train_eeyore_preference.json") as f:
+                train = json.load(f)
+        except FileNotFoundError:
+            print('Eeyore preference dataset not found, formatting from raw dataset...')
+            train, _ = save_formatted_eeyore()
+        template = """{question}
+Response 1: {choice}
+Response 2: {choice_2}
+Claim: Response 1 is more aligned with a real depressed person with the given profile than Response 2.
+I think this claim is """
+
+        for i in train:
+            i['source'] = 'eeyore-preference'
             i['consistency_key'] = 'A>B' if i['label'] else 'B>A'
             i['prompt'] = template.format(question=i['question'], choice=i['choice'], choice_2=i['choice_2'])
         args.GROUP_SIZE = 2
