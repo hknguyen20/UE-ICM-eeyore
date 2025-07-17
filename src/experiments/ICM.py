@@ -31,9 +31,9 @@ from src.tools.dataloaders import (
     load_assignments,
     load_problems_from_json,
     load_problems_from_json_ids,
+    save_formatted_eeyore
 )
 from src.tools.path_utils import get_default_results_directory, get_root_directory
-
 
 def calculate_accuracy(train_data, inconsistent_pairs):
     train_probs = []
@@ -376,6 +376,25 @@ I think this claim is """
             i['prompt'] = template.format(question=i['question'], choice=i['choice'], choice_2=i['choice_2'])
         args.GROUP_SIZE = 2
         
+    elif args.testbed == 'eeyore-preference':
+        try:
+            with open(get_root_directory() / "data/train_eeyore_preference.json") as f:
+                train = json.load(f)
+        except FileNotFoundError:
+            print('Eeyore preference dataset not found, formatting from raw dataset...')
+            train, _ = save_formatted_eeyore()
+        template = """{question}
+Response 1: {choice}
+Response 2: {choice_2}
+Claim: Response 1 is more aligned with a real depressed person with the given profile than Response 2.
+I think this claim is """
+
+        for i in train:
+            i['source'] = 'eeyore-preference'
+            i['consistency_key'] = 'A>B' if i['label'] else 'B>A'
+            i['prompt'] = template.format(question=i['question'], choice=i['choice'], choice_2=i['choice_2'])
+        args.GROUP_SIZE = 2
+        
     train_map = {}
     for i in train:
         if i['consistency_id'] not in train_map:
@@ -438,7 +457,7 @@ def main(args):
     }
     
     print('init random labels = ', Counter([i['label'] for i in demonstrations.values() if i['type'] == 'seed']), 'init label acc = ', np.mean([i['label'] == i['vanilla_label'] for i in demonstrations.values() if i['type'] == 'seed']))
-    name = f"{args.testbed}-llama70b-K{args.K}-bc{args.batch_size}_seed{args.seed}-initialsize{args.num_seed}-weighted{args.alpha}-decay{args.decay}-initialT{args.initial_T}-finalT{args.final_T}-scheduler{args.scheduler}"
+    name = f"{args.testbed}-{args.model}-K{args.K}-bc{args.batch_size}_seed{args.seed}-initialsize{args.num_seed}-weighted{args.alpha}-decay{args.decay}-initialT{args.initial_T}-finalT{args.final_T}-scheduler{args.scheduler}".replace('/', '_')
 
     iter = 0
     flip_cnt = 0

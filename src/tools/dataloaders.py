@@ -1,11 +1,11 @@
-__all__ = ["load_prompts", "load_problems", "load_problems_from_json", "load_solutions"]
+__all__ = ["load_prompts", "load_problems", "load_problems_from_json", "load_solutions", "save_formatted_eeyore"]
 
 import json
 import logging
 import os
 
 from .path_utils import get_default_results_directory, get_root_directory
-
+from .format_eeyore import save_formatted_eeyore
 logger = logging.getLogger(__name__)
 
 ROOT_DIR = get_root_directory()

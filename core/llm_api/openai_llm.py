@@ -513,8 +513,10 @@ class OpenAIChatModel(OpenAIModel):
 
 
 BASE_MODELS = {
-    "meta-llama/Llama-3.1-8B",
+    # "meta-llama/Llama-3.1-8B",
+    "meta-llama/Meta-Llama-3.1-8B",
     "meta-llama/Llama-3.1-70B",
+    "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
 }
 
 
