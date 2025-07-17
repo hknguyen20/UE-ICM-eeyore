@@ -31,9 +31,9 @@ from src.tools.dataloaders import (
     load_assignments,
     load_problems_from_json,
     load_problems_from_json_ids,
+    save_formatted_eeyore
 )
 from src.tools.path_utils import get_default_results_directory, get_root_directory
-from src.tools.format_eeyore import save_formatted_eeyore
 
 def calculate_accuracy(train_data, inconsistent_pairs):
     train_probs = []
@@ -457,7 +457,7 @@ def main(args):
     }
     
     print('init random labels = ', Counter([i['label'] for i in demonstrations.values() if i['type'] == 'seed']), 'init label acc = ', np.mean([i['label'] == i['vanilla_label'] for i in demonstrations.values() if i['type'] == 'seed']))
-    name = f"{args.testbed}-llama70b-K{args.K}-bc{args.batch_size}_seed{args.seed}-initialsize{args.num_seed}-weighted{args.alpha}-decay{args.decay}-initialT{args.initial_T}-finalT{args.final_T}-scheduler{args.scheduler}"
+    name = f"{args.testbed}-{args.model}-K{args.K}-bc{args.batch_size}_seed{args.seed}-initialsize{args.num_seed}-weighted{args.alpha}-decay{args.decay}-initialT{args.initial_T}-finalT{args.final_T}-scheduler{args.scheduler}".replace('/', '_')
 
     iter = 0
     flip_cnt = 0
