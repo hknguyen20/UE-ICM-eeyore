@@ -74,18 +74,16 @@ def save_formatted_eeyore(output_dir=None):
     train_data = [formatted_data[i] for i in indices[test_size:]]
     
     # Save splits
-    files = []
     for split, data in [('train', train_data), ('test', test_data)]:
-        output_file = get_root_directory() / "data" / f"{split}_eeyore_preference.json"
+        output_dir = get_root_directory() / "data"
+        output_dir.mkdir(parents=True, exist_ok=True)
+        output_file = output_dir / f"{split}_eeyore_preference.json"
         with open(output_file, 'w') as f:
             json.dump(data, f, indent=2)
         print(f"[{split}] Saved {len(data)//2} pairs to {output_file}")
-        files.append(output_file)
-    
-    return tuple(files)
 
 def main():
-    train_file, test_file = save_formatted_eeyore()
+    save_formatted_eeyore()
 
 if __name__ == "__main__":
     main()

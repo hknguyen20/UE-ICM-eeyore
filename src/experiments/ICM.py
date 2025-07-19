@@ -377,12 +377,12 @@ I think this claim is """
         args.GROUP_SIZE = 2
         
     elif args.testbed == 'eeyore-preference':
-        try:
-            with open(get_root_directory() / "data/train_eeyore_preference.json") as f:
-                train = json.load(f)
-        except FileNotFoundError:
+        file_path = get_root_directory() / "data/train_eeyore_preference.json"
+        if not file_path.exists():
             print('Eeyore preference dataset not found, formatting from raw dataset...')
-            train, _ = save_formatted_eeyore()
+            save_formatted_eeyore()
+        with open(file_path) as f:
+            train = json.load(f)
         template = """{question}
 Response 1: {choice}
 Response 2: {choice_2}
