@@ -157,3 +157,4 @@ logs
 #logging
 *.log
 *.out
+!src/experiments/progress.log

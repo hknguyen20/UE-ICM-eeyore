@@ -1,0 +1,493 @@
+task:  eeyore-preference
+init random labels =  Counter({1: 4, 0: 4}) init label acc =  0.75
+searching:   0%|          | 0/100 [00:00<?, ?it/s]searching:   1%|          | 1/100 [00:58<1:37:13, 58.92s/it]searching:   2%|▏         | 2/100 [01:04<45:06, 27.62s/it]  searching:   3%|▎         | 3/100 [01:08<27:27, 16.99s/it]searching:   4%|▍         | 4/100 [01:13<19:31, 12.21s/it]searching:   5%|▌         | 5/100 [01:21<16:53, 10.67s/it]searching:   6%|▌         | 6/100 [01:34<17:36, 11.24s/it]searching:   7%|▋         | 7/100 [01:47<18:30, 11.94s/it]searching:   8%|▊         | 8/100 [01:56<16:42, 10.89s/it]searching:   9%|▉         | 9/100 [01:56<11:24,  7.52s/it]searching:  10%|█         | 10/100 [02:17<17:34, 11.72s/it]searching:  11%|█         | 11/100 [02:25<15:51, 10.69s/it]searching:  12%|█▏        | 12/100 [02:47<20:37, 14.06s/it]searching:  13%|█▎        | 13/100 [03:15<26:28, 18.26s/it]searching:  14%|█▍        | 14/100 [04:30<50:56, 35.54s/it]searching:  15%|█▌        | 15/100 [05:19<55:56, 39.49s/it]searching:  16%|█▌        | 16/100 [06:09<59:32, 42.53s/it]searching:  17%|█▋        | 17/100 [06:50<58:09, 42.04s/it]searching:  18%|█▊        | 18/100 [07:32<57:41, 42.21s/it]searching:  19%|█▉        | 19/100 [07:34<40:32, 30.03s/it]searching:  20%|██        | 20/100 [07:56<36:49, 27.62s/it]iter = 0, pool size = 8, cur acc = 1.0, new acc = 0.8888888888888888, cur score = 5.539602271360888, new score = 0.4571770395641446, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 4, 0: 4})
+new label distribution =  Counter({1: 5, 0: 4})
+accept prob =  0.6015518637990453
+reject
+====================================================================================================
+iter = 1, pool size = 8, cur acc = 1.0, new acc = 1.0, cur score = 5.539602271360888, new score = 2.621393503332307, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 4, 0: 4})
+new label distribution =  Counter({1: 5, 0: 4})
+accept prob =  0.74690231152184
+accept
+====================================================================================================
+iter = 2, pool size = 9, cur acc = 1.0, new acc = 0.9, cur score = 2.621393503332307, new score = 2.9122516319487075, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 5, 0: 4})
+new label distribution =  Counter({1: 6, 0: 4})
+accept prob =  1.071872706027193
+accept
+====================================================================================================
+iter = 3, pool size = 10, cur acc = 0.9, new acc = 0.8181818181818182, cur score = 2.9122516319487075, new score = 8.965878310398699, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 6, 0: 4})
+new label distribution =  Counter({1: 6, 0: 5})
+accept prob =  6.92737116411318
+accept
+====================================================================================================
+iter = 4, pool size = 11, cur acc = 0.8181818181818182, new acc = 0.8333333333333334, cur score = 8.965878310398699, new score = 9.043444928388, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 6, 0: 5})
+new label distribution =  Counter({1: 6, 0: 6})
+accept prob =  1.0296950545113661
+accept
+====================================================================================================
+iter = 5, pool size = 12, cur acc = 0.8333333333333334, new acc = 0.8461538461538461, cur score = 9.043444928388, new score = 8.378811483823199, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 6, 0: 6})
+new label distribution =  Counter({1: 7, 0: 6})
+accept prob =  0.7554810372650516
+accept
+====================================================================================================
+iter = 6, pool size = 13, cur acc = 0.8461538461538461, new acc = 0.8571428571428571, cur score = 8.378811483823199, new score = 10.77747961453432, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 7, 0: 6})
+new label distribution =  Counter({1: 7, 0: 7})
+accept prob =  3.0024663885414054
+accept
+====================================================================================================
+iter = 7, pool size = 14, cur acc = 0.8571428571428571, new acc = 0.8666666666666667, cur score = 10.77747961453432, new score = 9.975404168796072, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 7, 0: 7})
+new label distribution =  Counter({1: 8, 0: 7})
+accept prob =  0.6754602999876166
+reject
+====================================================================================================
+====================================================================================================
+iter = 9, pool size = 14, cur acc = 0.8571428571428571, new acc = 0.7142857142857143, cur score = 10.77747961453432, new score = 14.909134583202638, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 7, 0: 7})
+new label distribution =  Counter({1: 7, 0: 7})
+accept prob =  7.546858349795052
+accept
+====================================================================================================
+iter = 10, pool size = 14, cur acc = 0.7142857142857143, new acc = 0.7333333333333333, cur score = 14.909134583202638, new score = 12.59588001856148, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 7, 0: 7})
+new label distribution =  Counter({0: 8, 1: 7})
+accept prob =  0.30319443363587256
+reject
+====================================================================================================
+iter = 11, pool size = 14, cur acc = 0.7142857142857143, new acc = 0.7333333333333333, cur score = 14.909134583202638, new score = 13.218754706511495, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 7, 0: 7})
+new label distribution =  Counter({1: 8, 0: 7})
+accept prob =  0.41809474267150687
+accept
+====================================================================================================
+iter = 12, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.7333333333333333, cur score = 13.218754706511495, new score = 13.202582190749384, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 7})
+accept prob =  0.9913137638451102
+accept
+====================================================================================================
+iter = 13, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.3169523288509, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.34752188818707436
+reject
+====================================================================================================
+iter = 14, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.331802112492587, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.3504265781476114
+reject
+====================================================================================================
+iter = 15, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.346272580939173, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.3532804264962385
+reject
+====================================================================================================
+iter = 16, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.3169523288509, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.34752188818707436
+reject
+====================================================================================================
+iter = 17, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.360917584348108, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.3561923609054327
+reject
+====================================================================================================
+====================================================================================================
+iter = 19, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.75, cur score = 13.202582190749384, new score = 9.550802007753163, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 9, 0: 7})
+accept prob =  0.12913654568454472
+reject
+====================================================================================================
+iter = 20, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.316872052727966, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  searching:  21%|██        | 21/100 [08:52<47:46, 36.29s/it]searching:  22%|██▏       | 22/100 [09:38<50:57, 39.19s/it]searching:  23%|██▎       | 23/100 [10:25<53:17, 41.53s/it]searching:  24%|██▍       | 24/100 [11:10<53:56, 42.58s/it]searching:  25%|██▌       | 25/100 [11:57<54:42, 43.77s/it]searching:  26%|██▌       | 26/100 [12:39<53:20, 43.25s/it]searching:  27%|██▋       | 27/100 [13:20<51:56, 42.70s/it]searching:  28%|██▊       | 28/100 [14:03<51:20, 42.78s/it]searching:  29%|██▉       | 29/100 [14:03<35:29, 29.99s/it]searching:  30%|███       | 30/100 [14:50<40:53, 35.06s/it]searching:  31%|███       | 31/100 [15:56<51:02, 44.38s/it]searching:  32%|███▏      | 32/100 [16:10<39:42, 35.04s/it]searching:  33%|███▎      | 33/100 [16:10<27:25, 24.57s/it]searching:  34%|███▍      | 34/100 [16:19<21:56, 19.95s/it]searching:  35%|███▌      | 35/100 [16:33<19:44, 18.22s/it]searching:  36%|███▌      | 36/100 [17:40<35:04, 32.88s/it]searching:  37%|███▋      | 37/100 [18:06<32:19, 30.79s/it]searching:  38%|███▊      | 38/100 [18:31<30:00, 29.04s/it]searching:  39%|███▉      | 39/100 [18:32<20:50, 20.50s/it]searching:  40%|████      | 40/100 [18:54<21:00, 21.00s/it]searching:  41%|████      | 41/100 [19:08<18:36, 18.92s/it]searching:  42%|████▏     | 42/100 [19:15<14:59, 15.51s/it]Counter({1: 8, 0: 8})
+accept prob =  0.3475062513977412
+reject
+====================================================================================================
+iter = 21, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.3169523288509, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.34752188818707436
+reject
+====================================================================================================
+iter = 22, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.346272580939173, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.3532804264962385
+reject
+====================================================================================================
+iter = 23, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.346272580939173, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.3532804264962385
+reject
+====================================================================================================
+iter = 24, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.346060934627554, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.35323851884475793
+reject
+====================================================================================================
+iter = 25, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.3169523288509, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.34752188818707436
+reject
+====================================================================================================
+iter = 26, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.316872052727966, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.3475062513977412
+reject
+====================================================================================================
+iter = 27, pool size = 15, cur acc = 0.7333333333333333, new acc = 0.625, cur score = 13.202582190749384, new score = 11.346272885180769, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 7})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.35328048674207047
+accept
+====================================================================================================
+====================================================================================================
+iter = 29, pool size = 16, cur acc = 0.625, new acc = 0.625, cur score = 11.346272885180769, new score = 11.331340146927163, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.9913826418053545
+accept
+====================================================================================================
+iter = 30, pool size = 16, cur acc = 0.625, new acc = 0.625, cur score = 11.331340146927163, new score = 11.316484635662086, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.9911707459516897
+accept
+====================================================================================================
+iter = 31, pool size = 16, cur acc = 0.625, new acc = 0.5882352941176471, cur score = 11.316484635662086, new score = 5.903800875771241, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.03622809622406681
+reject
+====================================================================================================
+====================================================================================================
+iter = 33, pool size = 16, cur acc = 0.625, new acc = 0.5882352941176471, cur score = 11.316484635662086, new score = 7.457242343683712, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.0938857711107019
+reject
+====================================================================================================
+iter = 34, pool size = 16, cur acc = 0.625, new acc = 0.5882352941176471, cur score = 11.316484635662086, new score = 5.454711535110872, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.02750994950328736
+reject
+====================================================================================================
+iter = 35, pool size = 16, cur acc = 0.625, new acc = 0.625, cur score = 11.316484635662086, new score = 11.317075364807064, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  1.000362176552763
+accept
+====================================================================================================
+iter = 36, pool size = 16, cur acc = 0.625, new acc = 0.6470588235294118, cur score = 11.317075364807064, new score = 10.485928761411124, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.5934493751002401
+reject
+====================================================================================================
+iter = 37, pool size = 16, cur acc = 0.625, new acc = 0.5882352941176471, cur score = 11.317075364807064, new score = 10.03213104050209, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.4463272820261489
+reject
+====================================================================================================
+====================================================================================================
+iter = 39, pool size = 16, cur acc = 0.625, new acc = 0.5882352941176471, cur score = 11.317075364807064, new score = 9.35049988360275, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({0: 9, 1: 8})
+accept prob =  0.2909398786587297
+reject
+====================================================================================================
+iter = 40, pool size = 16, cur acc = 0.625, new acc = 0.6470588235294118, cur score = 11.317075364807064, new score = 7.446726552265723, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.08805009530579427
+reject
+====================================================================================================
+iter = 41, pool size = 16, cur acc = 0.625, new acc = 0.5882352941176471, cur score = 11.317075364807064, new score = 5.4418537003793, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.025008699722018957
+reject
+====================================================================================================
+searching:  43%|████▎     | 43/100 [19:25<13:05, 13.77s/it]searching:  44%|████▍     | 44/100 [19:26<09:21, 10.02s/it]searching:  45%|████▌     | 45/100 [19:27<06:27,  7.05s/it]searching:  46%|████▌     | 46/100 [19:27<04:28,  4.98s/it]searching:  47%|████▋     | 47/100 [20:45<23:42, 26.84s/it]searching:  48%|████▊     | 48/100 [20:45<16:19, 18.83s/it]searching:  49%|████▉     | 49/100 [22:02<30:54, 36.37s/it]searching:  50%|█████     | 50/100 [23:18<40:06, 48.12s/it]searching:  51%|█████     | 51/100 [23:18<27:32, 33.73s/it]searching:  52%|█████▏    | 52/100 [23:18<18:55, 23.65s/it]searching:  53%|█████▎    | 53/100 [23:28<15:19, 19.57s/it]searching:  54%|█████▍    | 54/100 [23:42<13:41, 17.86s/it]searching:  55%|█████▌    | 55/100 [23:42<09:24, 12.54s/it]searching:  56%|█████▌    | 56/100 [23:42<06:27,  8.82s/it]searching:  57%|█████▋    | 57/100 [24:05<09:18, 12.98s/it]searching:  58%|█████▊    | 58/100 [24:58<17:28, 24.95s/it]searching:  59%|█████▉    | 59/100 [24:59<12:15, 17.95s/it]searching:  60%|██████    | 60/100 [25:28<14:12, 21.31s/it]searching:  61%|██████    | 61/100 [26:21<19:57, 30.69s/it]searching:  62%|██████▏   | 62/100 [27:14<23:39, 37.34s/it]searching:  63%|██████▎   | 63/100 [28:08<26:05, 42.31s/it]searching:  64%|██████▍   | 64/100 [28:58<26:51, 44.76s/it]searching:  65%|██████▌   | 65/100 [29:52<27:43, 47.52s/it]searching:  66%|██████▌   | 66/100 [30:44<27:36, 48.72s/it]searching:  67%|██████▋   | 67/100 [31:36<27:27, 49.93s/it]iter = 42, pool size = 16, cur acc = 0.625, new acc = 0.6470588235294118, cur score = 11.317075364807064, new score = 6.316087611839995, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.04329676092264149
+reject
+====================================================================================================
+iter = 43, pool size = 16, cur acc = 0.625, new acc = 0.6470588235294118, cur score = 11.317075364807064, new score = 6.316250607184248, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.043301191721866715
+reject
+====================================================================================================
+====================================================================================================
+====================================================================================================
+iter = 46, pool size = 16, cur acc = 0.625, new acc = 0.625, cur score = 11.317075364807064, new score = 11.360114685967813, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  1.0273889455018077
+accept
+====================================================================================================
+====================================================================================================
+iter = 48, pool size = 16, cur acc = 0.625, new acc = 0.625, cur score = 11.360114685967813, new score = 11.3169523288509, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  0.9726865451434169
+accept
+====================================================================================================
+iter = 49, pool size = 16, cur acc = 0.625, new acc = 0.625, cur score = 11.3169523288509, new score = 11.3169523288509, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 8, 0: 8})
+accept prob =  1.0
+accept
+====================================================================================================
+====================================================================================================
+====================================================================================================
+iter = 52, pool size = 16, cur acc = 0.625, new acc = 0.6470588235294118, cur score = 11.3169523288509, new score = 6.329606150309418, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.035980513931603016
+reject
+====================================================================================================
+iter = 53, pool size = 16, cur acc = 0.625, new acc = 0.5882352941176471, cur score = 11.3169523288509, new score = 5.4411183117640185, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  0.019899082165686133
+reject
+====================================================================================================
+====================================================================================================
+====================================================================================================
+iter = 56, pool size = 16, cur acc = 0.625, new acc = 0.5882352941176471, cur score = 11.3169523288509, new score = 12.848353853879633, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 8, 0: 8})
+new label distribution =  Counter({1: 9, 0: 8})
+accept prob =  2.7756851001555636
+accept
+====================================================================================================
+iter = 57, pool size = 17, cur acc = 0.5882352941176471, new acc = 0.6666666666666666, cur score = 12.848353853879633, new score = 10.532762285136553, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 8})
+new label distribution =  Counter({1: 9, 0: 9})
+accept prob =  0.2080153817075819
+reject
+====================================================================================================
+====================================================================================================
+iter = 59, pool size = 17, cur acc = 0.5882352941176471, new acc = 0.6111111111111112, cur score = 12.848353853879633, new score = 8.854205490057925, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 8})
+new label distribution =  Counter({1: 10, 0: 8})
+accept prob =  0.06664804521400988
+reject
+====================================================================================================
+iter = 60, pool size = 17, cur acc = 0.5882352941176471, new acc = 0.6666666666666666, cur score = 12.848353853879633, new score = 10.558626578479533, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 8})
+new label distribution =  Counter({1: 9, 0: 9})
+accept prob =  0.21169571592995912
+reject
+====================================================================================================
+iter = 61, pool size = 17, cur acc = 0.5882352941176471, new acc = 0.6666666666666666, cur score = 12.848353853879633, new score = 10.532762414209662, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 8})
+new label distribution =  Counter({1: 9, 0: 9})
+accept prob =  0.20801539991333123
+reject
+====================================================================================================
+iter = 62, pool size = 17, cur acc = 0.5882352941176471, new acc = 0.6666666666666666, cur score = 12.848353853879633, new score = 10.532762285136553, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 8})
+new label distribution =  Counter({1: 9, 0: 9})
+accept prob =  0.2080153817075819
+reject
+====================================================================================================
+iter = 63, pool size = 17, cur acc = 0.5882352941176471, new acc = 0.6666666666666666, cur score = 12.848353853879633, new score = 10.532762414209662, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 8})
+new label distribution =  Counter({1: 9, 0: 9})
+accept prob =  0.20801539991333123
+reject
+====================================================================================================
+iter = 64, pool size = 17, cur acc = 0.5882352941176471, new acc = 0.6666666666666666, cur score = 12.848353853879633, new score = 10.57129144323201, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 8})
+new label distribution =  Counter({1: 9, 0: 9})
+accept prob =  0.21352152801448754
+reject
+====================================================================================================
+iter = 65, pool size = 17, cur acc = 0.5882352941176471, new acc = 0.6666666666666666, cur score = 12.848353853879633, new score = 10.558764510161783, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 8})
+new label distribution =  Counter({1: 9, 0: 9})
+accept prob =  0.21171551631926128
+reject
+====================================================================================================
+iter = 66, pool size = 17, cur acc = 0.5882352941176471, new acc = 0.6666666666666666, cur score = 12.848353853879633, new score = 10.532762285136553, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 8})
+new label distribution =  Counter({1: 9, 0: 9})
+accept prob =  0.2080153817075819
+accept
+====================================================================================================
+searching:  68%|██████▊   | 68/100 [32:06<23:19, 43.72s/it]searching:  69%|██████▉   | 69/100 [32:36<20:29, 39.65s/it]searching:  70%|███████   | 70/100 [32:37<14:06, 28.22s/it]searching:  71%|███████   | 71/100 [32:38<09:34, 19.80s/it]searching:  72%|███████▏  | 72/100 [32:39<06:40, 14.32s/it]searching:  73%|███████▎  | 73/100 [32:57<06:57, 15.45s/it]searching:  74%|███████▍  | 74/100 [32:59<04:51, 11.23s/it]searching:  75%|███████▌  | 75/100 [33:40<08:26, 20.24s/it]searching:  76%|███████▌  | 76/100 [34:33<12:04, 30.20s/it]searching:  77%|███████▋  | 77/100 [34:33<08:07, 21.19s/it]searching:  78%|███████▊  | 78/100 [38:24<30:48, 84.02s/it]searching:  79%|███████▉  | 79/100 [42:21<45:25, 129.79s/it]searching:  80%|████████  | 80/100 [46:21<54:17, 162.85s/it]searching:  81%|████████  | 81/100 [50:15<58:23, 184.39s/it]searching:  82%|████████▏ | 82/100 [54:13<1:00:05, 200.29s/it]searching:  83%|████████▎ | 83/100 [55:29<46:11, 163.06s/it]  searching:  84%|████████▍ | 84/100 [56:49<36:50, 138.18s/it]searching:  85%|████████▌ | 85/100 [1:00:50<42:15, 169.00s/it]searching:  86%|████████▌ | 86/100 [1:00:50<27:36, 118.35s/it]searching:  87%|████████▋ | 87/100 [1:02:20<23:49, 109.93s/it]searching:  88%|████████▊ | 88/100 [1:06:23<29:58, 149.83s/it]searching:  89%|████████▉ | 89/100 [1:07:53<24:11, 131.92s/it]iter = 67, pool size = 18, cur acc = 0.6666666666666666, new acc = 0.6842105263157895, cur score = 10.532762285136553, new score = 11.13468210514236, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 9, 0: 9})
+new label distribution =  Counter({1: 10, 0: 9})
+accept prob =  1.5138487030283712
+accept
+====================================================================================================
+iter = 68, pool size = 19, cur acc = 0.6842105263157895, new acc = 0.7, cur score = 11.13468210514236, new score = 9.961965355307184, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 10, 0: 9})
+new label distribution =  Counter({1: 10, 0: 10})
+accept prob =  0.4404753659812318
+reject
+====================================================================================================
+iter = 69, pool size = 19, cur acc = 0.6842105263157895, new acc = 0.7, cur score = 11.13468210514236, new score = 9.926393426799507, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 10, 0: 9})
+new label distribution =  Counter({1: 10, 0: 10})
+accept prob =  0.4296558473581577
+reject
+====================================================================================================
+====================================================================================================
+iter = 71, pool size = 19, cur acc = 0.6842105263157895, new acc = 0.7, cur score = 11.13468210514236, new score = 9.926478429586497, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 10, 0: 9})
+new label distribution =  Counter({1: 10, 0: 10})
+accept prob =  0.4296813823049103
+accept
+====================================================================================================
+iter = 72, pool size = 20, cur acc = 0.7, new acc = 0.7142857142857143, cur score = 9.926478429586497, new score = 5.0484043308982685, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 10, 0: 10})
+new label distribution =  Counter({1: 11, 0: 10})
+accept prob =  0.03148989371304125
+reject
+====================================================================================================
+====================================================================================================
+iter = 74, pool size = 20, cur acc = 0.7, new acc = 0.6666666666666666, cur score = 9.926478429586497, new score = 5.413884731504733, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 10, 0: 10})
+new label distribution =  Counter({1: 11, 0: 10})
+accept prob =  0.040803071316663095
+reject
+====================================================================================================
+iter = 75, pool size = 20, cur acc = 0.7, new acc = 0.6666666666666666, cur score = 9.926478429586497, new score = 8.94201743823583, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 10, 0: 10})
+new label distribution =  Counter({1: 11, 0: 10})
+accept prob =  0.4976347948893196
+accept
+====================================================================================================
+====================================================================================================
+iter = 77, pool size = 21, cur acc = 0.6666666666666666, new acc = 0.7272727272727273, cur score = 8.94201743823583, new score = 7.642419688306081, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 11, 0: 10})
+new label distribution =  Counter({1: 11, 0: 11})
+accept prob =  0.3932215291747842
+reject
+====================================================================================================
+iter = 78, pool size = 21, cur acc = 0.6666666666666666, new acc = 0.7272727272727273, cur score = 8.94201743823583, new score = 7.652987747853086, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 11, 0: 10})
+new label distribution =  Counter({1: 11, 0: 11})
+accept prob =  0.396217463437477
+reject
+====================================================================================================
+iter = 79, pool size = 21, cur acc = 0.6666666666666666, new acc = 0.7272727272727273, cur score = 8.94201743823583, new score = 7.642376068311721, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 11, 0: 10})
+new label distribution =  Counter({1: 11, 0: 11})
+accept prob =  0.39320921042525353
+reject
+====================================================================================================
+iter = 80, pool size = 21, cur acc = 0.6666666666666666, new acc = 0.7272727272727273, cur score = 8.94201743823583, new score = 7.653220740389848, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 11, 0: 10})
+new label distribution =  Counter({1: 11, 0: 11})
+accept prob =  0.3962837709132969
+reject
+====================================================================================================
+iter = 81, pool size = 21, cur acc = 0.6666666666666666, new acc = 0.7272727272727273, cur score = 8.94201743823583, new score = 7.642376114681422, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 11, 0: 10})
+new label distribution =  Counter({1: 11, 0: 11})
+accept prob =  0.39320922352034454
+accept
+====================================================================================================
+iter = 82, pool size = 22, cur acc = 0.7272727272727273, new acc = 0.7391304347826086, cur score = 7.642376114681422, new score = 5.904217004711991, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 11, 0: 11})
+new label distribution =  Counter({1: 12, 0: 11})
+accept prob =  0.28257437798915075
+accept
+====================================================================================================
+iter = 83, pool size = 23, cur acc = 0.7391304347826086, new acc = 0.75, cur score = 5.904217004711991, new score = 7.970217243059208, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 11})
+new label distribution =  Counter({1: 12, 0: 12})
+accept prob =  4.571182929050855
+accept
+====================================================================================================
+iter = 84, pool size = 24, cur acc = 0.75, new acc = 0.75, cur score = 7.970217243059208, new score = 7.960579306844068, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({1: 12, 0: 12})
+accept prob =  0.9928571745096186
+accept
+====================================================================================================
+====================================================================================================
+iter = 86, pool size = 24, cur acc = 0.75, new acc = 0.72, cur score = 7.960579306844068, new score = 2.308126022342801, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({1: 13, 0: 12})
+accept prob =  0.014285745972704945
+reject
+====================================================================================================
+iter = 87, pool size = 24, cur acc = 0.75, new acc = 0.75, cur score = 7.960579306844068, new score = 7.97021724061116, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({1: 12, 0: 12})
+accept prob =  1.0072703587582956
+accept
+====================================================================================================
+iter = 88, pool size = 24, cur acc = 0.75, new acc = 0.72, cur score = 7.97021724061116, new score = 2.298751389430517, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({1: 13, 0: 12})
+accept prob =  0.013492897643762146
+reject
+====================================================================================================
+searching:  90%|█████████ | 90/100 [1:07:54<15:24, 92.44s/it] searching:  91%|█████████ | 91/100 [1:11:50<20:19, 135.50s/it]searching:  92%|█████████▏| 92/100 [1:16:11<23:04, 173.10s/it]searching:  93%|█████████▎| 93/100 [1:17:51<17:39, 151.29s/it]searching:  94%|█████████▍| 94/100 [1:17:59<10:49, 108.30s/it]searching:  95%|█████████▌| 95/100 [1:19:26<08:29, 101.86s/it]searching:  96%|█████████▌| 96/100 [1:19:26<04:45, 71.42s/it] searching:  97%|█████████▋| 97/100 [1:19:33<02:36, 52.07s/it]searching:  98%|█████████▊| 98/100 [1:21:02<02:06, 63.18s/it]searching:  99%|█████████▉| 99/100 [1:22:44<01:14, 74.91s/it]searching: 100%|██████████| 100/100 [1:22:52<00:00, 54.65s/it]searching: 100%|██████████| 100/100 [1:22:52<00:00, 49.72s/it]
+====================================================================================================
+iter = 90, pool size = 24, cur acc = 0.75, new acc = 0.75, cur score = 7.97021724061116, new score = 7.970217167255401, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({1: 12, 0: 12})
+accept prob =  0.9999999443107028
+accept
+====================================================================================================
+iter = 91, pool size = 24, cur acc = 0.75, new acc = 0.75, cur score = 7.970217167255401, new score = 7.970217243059208, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({1: 12, 0: 12})
+accept prob =  1.0000000580991397
+accept
+====================================================================================================
+iter = 92, pool size = 24, cur acc = 0.75, new acc = 0.76, cur score = 7.970217243059208, new score = 3.3697305855108257, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({1: 13, 0: 12})
+accept prob =  0.028487537349452457
+reject
+====================================================================================================
+====================================================================================================
+iter = 94, pool size = 24, cur acc = 0.75, new acc = 0.72, cur score = 7.970217243059208, new score = 5.220271566301533, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({0: 13, 1: 12})
+accept prob =  0.11919783471209579
+reject
+====================================================================================================
+====================================================================================================
+====================================================================================================
+iter = 97, pool size = 24, cur acc = 0.75, new acc = 0.76, cur score = 7.970217243059208, new score = 2.992929973640718, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({1: 13, 0: 12})
+accept prob =  0.021285515515504283
+reject
+====================================================================================================
+iter = 98, pool size = 24, cur acc = 0.75, new acc = 0.76, cur score = 7.970217243059208, new score = 3.3978092983452757, cur inconsistent num = 0, new inconsistent num = 0
+cur label distribution =  Counter({1: 12, 0: 12})
+new label distribution =  Counter({1: 13, 0: 12})
+accept prob =  0.029112989334402175
+reject
+====================================================================================================
+====================================================================================================
